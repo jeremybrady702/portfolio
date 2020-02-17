@@ -5,6 +5,11 @@ paths:
     post:
       action: google_gmail/oauthCallback
       accounts: {}
+  /reddit/links:
+    get:
+      action: reddit_rss/subreddit
+      input:
+        subreddit: sports
 tasks:
   task:
     schedule: rate(1 day)
@@ -16,4 +21,3 @@ tasks:
       accounts: {}
       trackBy: ''
       array: ''
-      input: {}
