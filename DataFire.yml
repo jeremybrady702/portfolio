@@ -5,3 +5,15 @@ paths:
     post:
       action: google_gmail/oauthCallback
       accounts: {}
+tasks:
+  task:
+    schedule: rate(1 day)
+    action: google_gmail/oauthCallback
+    accounts: {}
+    input: {}
+    monitor:
+      action: google_gmail/oauthCallback
+      accounts: {}
+      trackBy: ''
+      array: ''
+      input: {}
