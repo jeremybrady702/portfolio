@@ -1,0 +1,7 @@
+options:
+  cors: true
+paths:
+  /contact:
+    post:
+      action: google_gmail/oauthCallback
+      accounts: {}
