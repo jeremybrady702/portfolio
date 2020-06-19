@@ -1849,7 +1849,10 @@ input, select, textarea {
 			border-radius: 4px;
 			width: 3.65em;
 			height: 3.65em;
-			display: inline-block;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			padding-top: .5em;
 			text-align: center;
 			line-height: 2.65em;
 			color: inherit;
